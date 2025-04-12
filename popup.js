@@ -25,18 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let attemptingToDisable = false;
   
   // Tab switching
-  tabs.forEach(tab => {
+  document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
-      // Update active tab
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+      // Remove active class from all tabs and contents
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       
-      // Show corresponding content
-      const tabName = tab.getAttribute('data-tab');
-      tabContents.forEach(content => {
-        content.classList.remove('active');
-      });
-      document.getElementById(`${tabName}-tab`).classList.add('active');
+      // Add active class to clicked tab and corresponding content
+      tab.classList.add('active');
+      document.getElementById(`${tab.dataset.tab}-tab`).classList.add('active');
     });
   });
   

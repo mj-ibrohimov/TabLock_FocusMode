@@ -283,12 +283,42 @@
       padding: 15px;
       font-size: 13px;
     }
+    .donation-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .donation-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #FF813F;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .donation-button:hover {
+      background-color: #e67338;
+      transform: translateY(-2px);
+    }
+    .donation-text {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1 class="title">Focus Mode</h1>
+      <h1 class="title">
+      
+        TabLock
+      </h1>
     </div>
     
     <div class="content">
@@ -296,6 +326,7 @@
         <div class="tab active" data-tab="focus">Focus</div>
         <div class="tab" data-tab="blocklist">Blocklist</div>
         <div class="tab" data-tab="settings">Settings</div>
+        <div class="tab" data-tab="donation">Donate</div>
       </div>
       
       <!-- Focus Tab -->
@@ -362,6 +393,19 @@
               <span class="slider"></span>
             </label>
           </div>
+        </div>
+      </div>
+      
+      <!-- Donation Tab -->
+      <div class="tab-content" id="donation-tab">
+        <div class="section">
+          <div class="section-title">Support TabLock</div>
+          <div class="donation-text">
+            If you find TabLock helpful, consider supporting its development with a small donation. Your support helps keep the extension open source and as an appreciation to a developer .
+          </div>
+          <a href="http://buymeacoffee.com/muhammadjon_ibrohimov" target="_blank" class="donation-button">
+            Buy Me a Coffee
+          </a>
         </div>
       </div>
     </div>
