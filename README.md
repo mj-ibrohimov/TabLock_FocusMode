@@ -34,7 +34,7 @@ A Chrome extension that helps you stay focused by preventing new tab creation wh
 
 ### Website Blocklist
 1. Click on the "Blocklist" tab in the extension popup
-2. Enter a website URL you want to block (e.g., facebook.com)
+2. Enter a website URL you want to block (e.g., microsoft.com)
 3. Click "Add" to add the website to your blocklist
 4. Any attempt to visit a blocked website will redirect to a block page
 5. To remove a website from the blocklist, click the "Remove" button next to the URL
